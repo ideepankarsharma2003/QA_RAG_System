@@ -1,82 +1,88 @@
-QA_RAG Streamlit Application
+# QA_RAG Streamlit Application
 
-Overview
+## Overview
+QA_RAG is a Streamlit-based Question Answering system leveraging Retrieval-Augmented Generation (RAG) for efficient and accurate responses. This repository contains the necessary code and configuration files to run the application locally or within a Docker container. 🌟✨🚀
 
-QA_RAG is a Streamlit-based Question Answering system leveraging Retrieval-Augmented Generation (RAG) for efficient and accurate responses. This repository contains the necessary code and configuration files to run the application locally or within a Docker container.
-
-Folder Structure
-
-QA_RAG_System
+## Folder Structure
+```
+QA_RAG
 ├── app.py                  # Main Streamlit application script
 ├── requirements.txt        # Python dependencies
 ├── QA_RAG_System.ipynb     # Jupyter Notebook for development and experimentation
 ├── .env                    # Environment variables configuration
 ├── Dockerfile              # Docker configuration for containerization
+```
 
-Prerequisites
+## Prerequisites
+Make sure you have the following installed: 🌟✨🚀
 
-Make sure you have the following installed:
+- Python 3.8 or higher
+- pip (Python package manager)
+- Docker (optional, for containerized deployment)
 
-Python 3.8 or higher
+## Installation
 
-pip (Python package manager)
+### Local Setup
 
-Docker (optional, for containerized deployment)
+1. Clone the repository: 🌟✨🚀
+   ```bash
+   git clone https://github.com/your_username/QA_RAG.git
+   cd QA_RAG
+   ```
 
-Installation
+2. Create a virtual environment and activate it: 🌟✨🚀
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # On Windows: venv\Scripts\activate
+   ```
 
-Local Setup
+3. Install the required dependencies: 🌟✨🚀
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Clone the repository:
+4. Configure the `.env` file with your required environment variables (if applicable). 🌟✨🚀
 
-git clone https://github.com/your_username/QA_RAG.git
-cd QA_RAG
+5. Run the application: 🌟✨🚀
+   ```bash
+   streamlit run app.py
+   ```
 
-Create a virtual environment and activate it:
+6. Open your browser and navigate to `http://localhost:8501` to access the application. 🌟✨🚀
 
-python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
+### Docker Setup
 
-Install the required dependencies:
+1. Build the Docker image: 🌟✨🚀
+   ```bash
+   docker build -t qa_rag_app .
+   ```
 
-pip install -r requirements.txt
+2. Run the Docker container: 🌟✨🚀
+   ```bash
+   docker run -p 8501:8501 --env-file .env qa_rag_app
+   ```
 
-Configure the .env file with your required environment variables (if applicable).
+3. Open your browser and navigate to `http://localhost:8501` to access the application. 🌟✨🚀
 
-Run the application:
+## Files Description
 
-streamlit run app.py
+- **app.py**: Contains the main logic for the Streamlit application. 🌟✨🚀
+- **requirements.txt**: Lists the Python dependencies required to run the application. 🌟✨🚀
+- **QA_RAG_System.ipynb**: Jupyter Notebook used for exploratory development and prototyping. 🌟✨🚀
+- **.env**: Stores environment-specific variables such as API keys or configuration settings. 🌟✨🚀
+- **Dockerfile**: Defines the Docker image for containerized deployment. 🌟✨🚀
 
-Open your browser and navigate to http://localhost:8501 to access the application.
+## Features
+- **Streamlit Interface**: Interactive web-based interface for user queries. 🌟✨🚀
+- **Retrieval-Augmented Generation (RAG)**: Combines document retrieval and generative language models for accurate responses. 🌟✨🚀
+- **Docker Support**: Containerized deployment for consistent and portable execution. 🌟✨🚀
 
-Docker Setup
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request with your improvements or bug fixes. 🌟✨🚀
 
-Build the Docker image:
+## License
+This project is licensed under the [MIT License](LICENSE). 🌟✨🚀
 
-docker build -t qa_rag_app .
+## Contact
+For any questions or support, please contact [your_email@example.com](mailto:your_email@example.com). 🌟✨🚀
 
-Run the Docker container:
-
-docker run -p 8501:8501 --env-file .env qa_rag_app
-
-Open your browser and navigate to http://localhost:8501 to access the application.
-
-Files Description
-
-app.py: Contains the main logic for the Streamlit application.
-
-requirements.txt: Lists the Python dependencies required to run the application.
-
-QA_RAG_System.ipynb: Jupyter Notebook used for exploratory development and prototyping.
-
-.env: Stores environment-specific variables such as API keys or configuration settings.
-
-Dockerfile: Defines the Docker image for containerized deployment.
-
-Features
-
-Streamlit Interface: Interactive web-based interface for user queries.
-
-Retrieval-Augmented Generation (RAG): Combines document retrieval and generative language models for accurate responses.
-
-Docker Support: Containerized deployment for consistent and portable execution.
