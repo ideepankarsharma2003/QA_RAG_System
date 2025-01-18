@@ -1,0 +1,6 @@
+streamlit 
+redis 
+llama-parse 
+langchain-google-genai 
+langchain-chroma 
+langchain-community
