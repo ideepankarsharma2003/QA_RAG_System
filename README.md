@@ -80,9 +80,6 @@ Make sure you have the following installed: 🌟✨🚀
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your improvements or bug fixes. 🌟✨🚀
 
-## License
-This project is licensed under the [MIT License](LICENSE). 🌟✨🚀
-
 ## Contact
-For any questions or support, please contact [your_email@example.com](mailto:your_email@example.com). 🌟✨🚀
+For any questions or support, please contact [your_email@example.com](mailto:siddamurthi789@gmail.com). 🌟✨🚀
 
